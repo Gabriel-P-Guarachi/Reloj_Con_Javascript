@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /*hace que el ancho total no se altere con border-box*/
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    /*#ccc aparece si no carga la imagen*/
+    background: url('../images/fondo_aguila.jpg') #ccc;
+    /*Se ajusta con el tamaño de la pantalla*/
+    background-size: cover;
+    color: #FFF;
+    /*Esto sera el tamaño inician que podrá vale 1em*/
+    font-size: 16px;
+}
+.wrap{
+    width: 90%;
+    max-width: 1000px;
+}
+.widget{
+    width: 40%;
+    margin: 2em;
+}
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+.fecha{
+    font-family: Oswald, Arial;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem;
+    /*o equivale 5px*/
+    background: rgba(50, 50, 50, 0.5);
+    padding: 20px;
+    width: 100%;
+}
+.reloj{
+    font-family: Oswald, Arial;
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    text-align: center;
+    background: rgba(50, 50, 50, 0.5);
+}
+.reloj .caja-segundos{
+    display: inline-block;
+}
+.reloj .ampm,
+.reloj .segundos{
+    font-size: 2rem;
+    display: block;
+}
+
+
+
+@media screen and (max-device-width: 480px) {
+    .wrap{
+        width: 100%;
+    }
+    .widget{
+        width: 80%;
+    }
+}
